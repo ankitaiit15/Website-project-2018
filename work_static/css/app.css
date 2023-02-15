@@ -1,0 +1,123 @@
+/*
+	Base Style
+*/	
+
+body {
+	font-family: "Roboto", sans-serif;
+	background-color: #efefef;
+	padding-top: 4rem;
+}
+
+
+/*
+	sticky footer
+*/
+
+.site {
+
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.site-content {
+	flex: 1;
+}
+
+/*
+	Helpers
+*/
+
+.bg-white {
+	background-color: #fff;
+}
+
+.bg-grey {
+	background-color: grey;
+}
+
+.bg-pink {
+	 background-color: #ec407a;
+}
+
+.bg-maroon {
+	background-color: #6f1818;
+}
+
+.bg-black {
+	background-color: black;
+}
+
+.text-red {
+	color: red;
+}
+
+.text-blue {
+	color: #00729e;
+}
+
+.text-darkblue {
+	color: #2ffffd;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.p-rel {
+	position: relative;
+}
+
+.p-abs {
+	position: absolute;
+}
+
+.z-2 {
+	z-index: 2;
+}
+
+.z-3 {
+	z-index: 3;
+}
+/*
+	Button
+*/
+
+
+.btn-blue {
+    background-color: #00729e; 
+    border-color:#00729e;
+    color: white;
+}
+
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active {
+    background-color: #015373;
+    color: white;
+}
+
+
+
+
+.hero-overlay-black:after {
+	z-index: 1;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+	display: block;
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.75) 100%);
+	background-image: -o-linear-gradient(rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.75) 100%);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.75) 100%);
+}
+
+.smartphoto {
+	z-index: 3000;
+}
+
+
