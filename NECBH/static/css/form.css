@@ -1,0 +1,13 @@
+.form-container {
+    position: absolute;
+    right: 150px;
+    width: 200px;
+    height: 120px;
+    border: 3px solid green;
+}
+.grid-container {
+    margin-left: 20px;
+}
+.panel-body {
+  padding: 15px;
+}

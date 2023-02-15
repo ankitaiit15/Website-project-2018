@@ -1,0 +1,643 @@
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Arial', 'heveltica', sans-serif;
+	/*	font-family: 'Arimo', sans-serif;*/
+}
+
+body {
+	background-color: rgb(220, 220, 220);
+}
+
+.full-width {
+	width: 100%;
+}
+
+.container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 80%;
+	margin: 0 auto;
+	-webkit-box-shadow: 1px 0 15px 0px rgb(5, 5, 5);
+	box-shadow: 1px 0 15px 0px rgb(5, 5, 5);
+	-webkit-box-shadow: 0px 0 15px 0px rgb(5, 5, 5);
+	box-shadow: 0px 0 15px 0px rgb(5, 5, 5);
+	background-color: white;
+}
+
+.headcontainer {
+	margin-bottom: 1rem;
+	/*    border: 2px solid rgb(7, 40, 59);*/
+	-webkit-box-shadow: 0 5px 10px 1px rgb(25, 25, 25);
+	box-shadow: 0 5px 10px 1px rgb(25, 25, 25);
+	width: 1040px;
+	height: 300px
+    /*margin: 500px;
+}
+	
+
+.cfn-logo,
+.iitg-logo {
+	width: 6rem;
+	-ms-flex-item-align: center;
+	align-self: center;
+}
+
+.cfn-logo img,
+.iitg-logo img {
+	width: 100%;
+}
+
+.header-title {
+	text-align: center;
+	-ms-flex-item-align: center;
+	align-self: center;
+	padding: 0.25rem 0;
+}
+
+.header-title h1 {
+	padding: 0.25rem;
+	font-size: 2.5rem;
+	text-shadow: 1px 1px 5px rgb(4, 23, 35);
+}
+
+.header-title h4 {
+	padding: 0.25rem;
+	font-size: 1.25rem;
+	text-shadow: 1px 1px 5px rgb(4, 23, 35);
+}
+
+header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding: 0.7rem;
+	/*    background: rgb(34,139,34);*/
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(10, 59, 87)), to(rgb(34,139,34)));
+	background: linear-gradient(rgb(10, 59, 87), rgb(34,139,34));
+	color: rgb(255, 255, 255);
+}
+
+nav {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(7, 40, 59)), to(rgb(9, 52, 77)));
+	background: linear-gradient(rgb(7, 40, 59), rgb(9, 52, 77));
+	/*    background: rgb(7, 40, 59);*/
+	color: rgb(255, 255, 255);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+}
+
+nav label,
+#toggle {
+	display: none;
+}
+
+nav a {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+nav .menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+nav .dropdown {
+	position: relative;
+	cursor: pointer;
+}
+
+nav .submenu {
+	display: none;
+	/*
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(7, 40, 59)), to(rgb(9, 52, 77)));
+    background: linear-gradient(rgb(7, 40, 59), rgb(9, 52, 77));
+*/
+	background: rgb(34,139,34);
+	text-shadow: 1px 1px 2px rgb(4, 23, 35);
+	color: rgb(255, 255, 255);
+	position: absolute;
+	top: 3rem;
+	left: 0.1rem;
+	width: 15.5rem;
+	z-index: 100;
+}
+
+nav .submenu-item:hover {
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(7, 40, 59)), to(rgb(9, 52, 77)));
+	background: linear-gradient(rgb(7, 40, 59), rgb(9, 52, 77));
+}
+
+nav .dropdown:hover .submenu {
+
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+
+/*
+nav .submenu {
+    display: none;
+}
+*/
+
+nav a {
+	font-weight: bold;
+	font-size: 1rem;
+	text-decoration: none;
+	text-align: center;
+	color: inherit;
+	padding: 1rem;
+
+}
+
+nav .menu:hover {
+	background: rgb(34,139,34);
+	text-shadow: 1px 1px 2px rgb(4, 23, 35);
+}
+
+main {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	color: rgb(7, 40, 59);
+	margin: 0.75rem;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+main * {
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.column-left {
+	-webkit-box-flex: 6;
+	-ms-flex: 6;
+	flex: 6;
+	margin-right: 0.5rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+
+
+.column-left > aside {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 100%;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.column-left > aside > * {
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+.news ul,
+.events ul {
+	padding: 1rem 2.5rem;
+}
+
+.news li,
+.events li {
+	padding-bottom: 0.5rem;
+}
+
+.news a,
+.events a {
+	text-decoration: none;
+	color: inherit;
+	display: inline-block;
+	padding: 0.25rem;
+	font-weight: 600;
+}
+
+.news a:hover,
+.events a:hover {
+	background-color: rgb(34,139,34);
+	color: white;
+}
+
+.column-right {
+	-webkit-box-flex: 3;
+	-ms-flex: 3;
+	flex: 3;
+	margin-left: 0.5rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.column-right > aside {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.column-right > aside > * {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.column-right p,
+ul {
+	font-size: 0.95rem;
+}
+
+.column-right p {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.slider-container {
+	/*    border: 2px solid rgb(7, 40, 59);*/
+	-webkit-box-shadow: 0 5px 10px 0px rgb(25, 25, 25);
+	box-shadow: 0 5px 10px 0px rgb(25, 25, 25);
+	margin-bottom: 1rem;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	min-height: 430px;
+	overflow: hidden;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.slider-container > div {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: absolute;
+}
+
+.slider-container img {
+	max-width: 100%;
+}
+
+/*
+
+main aside > * {
+    margin-bottom: 1rem;
+    border: 2px solid rgb(7, 40, 59);
+    -webkit-box-shadow: 0 5px 10px 1px rgb(25, 25, 25);
+    box-shadow: 0 5px 10px 1px rgb(25, 25, 25);
+}
+
+main h4 {
+    display: block;
+    color: rgb(255, 255, 255);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgb(7, 40, 59)), to(rgb(9, 52, 77)));
+    background: linear-gradient(rgb(7, 40, 59), rgb(9, 52, 77));
+    text-align: center;
+    padding: 0.5rem;
+}
+*/
+
+.content-heading {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	color: rgb(255, 255, 255);
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(7, 40, 59)), to(rgb(9, 52, 77)));
+	background: linear-gradient(rgb(7, 40, 59), rgb(9, 52, 77));
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	text-align: center;
+	justify-content: center;
+	padding: 0.5rem;
+	z-index:99;
+}
+
+.submenu-outline {
+	margin-bottom: 1rem;
+	/*    border: 2px solid rgb(7, 40, 59);*/
+	-webkit-box-shadow: 0 5px 10px 1px rgb(25, 25, 25);
+	box-shadow: 0 5px 10px 1px rgb(25, 25, 25);
+	
+}
+
+.shadow-outline {
+	margin-bottom: 1rem;
+	/*    border: 2px solid rgb(7, 40, 59);*/
+	-webkit-box-shadow: 0 5px 10px 1px rgb(25, 25, 25);
+	box-shadow: 0 5px 10px 1px rgb(25, 25, 25);
+}
+
+main p {
+	padding: 1.5rem;
+}
+
+.research-areas ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	font-weight: bold;
+	padding: 1.5rem 2.5rem;
+	font-size: 1rem;
+}
+
+.research-areas li {
+	padding-bottom: 0.5rem;
+}
+
+.research-areas a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.highlights {
+    width:inherit;
+    padding:0.7rem 1rem;
+}
+
+.highlights img {
+    width:100%;
+}
+
+.about-cfn,
+.mission p {
+	font-weight: 600;
+}
+
+footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(10, 59, 87)), to(rgb(34,139,34)));
+	background: linear-gradient(rgb(10, 59, 87), rgb(34,139,34));
+	text-shadow: 1px 1px 2px rgb(4, 23, 35);
+	color: rgb(255, 255, 255);
+	text-align: center;
+	padding: 1.5rem;
+}
+
+
+footer > * {
+	padding: 0.5rem;
+}
+
+footer a {
+	text-decoration: underline;
+	-webkit-text-decoration-style: dotted;
+	text-decoration-style: dotted;
+	color: inherit;
+}
+
+@media screen and (max-width:1050px) {
+	.slider-container {
+		min-height: 410px;
+
+	}
+
+	main {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+
+	.column-left {
+		margin-left: 0.25rem;
+		margin-right: 0.25rem;
+	}
+	.column-right {
+		margin-left: 0.25rem;
+		margin-right: 0.25rem;
+	}
+}
+
+
+@media screen and (max-width:900px) {
+
+	.container {
+		width: 90%;
+	}
+	.slider-container {
+		min-height: 370px;
+	}
+
+
+}
+@media screen and (max-width:800px) {
+
+	.container {
+		width: 100%;
+	}
+
+	.slider-container {
+		min-height: 320px;
+	}
+}
+
+@media screen and (max-width:750px) {
+
+	nav {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+
+	nav label {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		cursor: pointer;
+		text-align: left;
+		padding: 0.5rem 1rem;
+		font-size: 2rem;
+		-webkit-box-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+	}
+
+	nav .menu > a {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+		-webkit-box-pack: left;
+		-ms-flex-pack: left;
+		justify-content: left;
+	}
+	nav .menu {
+		display: none;
+		position: static;
+	}
+	nav .dropdown:hover {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		background: -webkit-gradient(linear, left top, left bottom, from(rgb(7, 40, 59)), to(rgb(9, 52, 77)));
+		background: linear-gradient(rgb(7, 40, 59), rgb(9, 52, 77));
+		text-shadow: 1px 1px 2px rgb(4, 23, 35);
+	}
+	nav .submenu {
+		position: static;
+		background: -webkit-gradient(linear, left top, left bottom, from(rgb(7, 40, 59)), to(rgb(9, 52, 77)));
+		background: linear-gradient(rgb(7, 40, 59), rgb(9, 52, 77));
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		margin-left: -1rem;
+		margin-top: 3rem;
+	}
+
+	nav .submenu-item:hover {
+		background: rgb(34,139,34);
+		text-shadow: 1px 1px 2px rgb(4, 23, 35);
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+
+	#toggle:checked ~ .menu {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+
+	.column-left {
+		margin-left: 0.2rem;
+		margin-right: 0.2rem;
+	}
+	.column-right {
+		margin-left: 0.2rem;
+		margin-right: 0.2rem;
+	}
+	.cfn-logo,
+	.iitg-logo {
+		width: 5rem;
+	}
+
+	.header-title h1 {
+		font-size: 2rem;
+		text-shadow: 1px 1px 2px rgb(4, 23, 35);
+	}
+
+	.header-title h4 {
+		font-size: 1rem;
+		text-shadow: 1px 1px 2px rgb(4, 23, 35);
+	}
+}
+
+
+@media screen and (max-width:520px) {
+
+	.iitg-logo,
+	.cfn-logo {
+		width: 4rem;
+	}
+
+	header {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+		-ms-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+	}
+
+
+	.header-title h1 {
+		font-size: 1.75rem;
+		text-shadow: 1px 1px 2px rgb(4, 23, 35);
+	}
+
+	.header-title h4 {
+		font-size: 1.0rem;
+		text-shadow: 1px 1px 2px rgb(4, 23, 35);
+	}
+	nav {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+
+}
+
+@media screen and (max-width:420px) {
+	.slider-container {
+		min-height: 300px;
+	}
+}
+
+@media screen and (max-width:370px) {
+	.slider-container {
+		min-height: 270px;
+	}
+}
+
+@media screen and (max-width:340px) {
+	.slider-container {
+		min-height: 200px;
+	}
+}
